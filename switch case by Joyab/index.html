@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case by Joyab</title>
+</head>
+<body>
+
+    <form action="">
+       <div class="switchclass">
+            <input type="radio" id="mercedes" name="models" value="mercedes">
+        <label for="car">mercedes</label>
+        <input type="radio" id="tata moters" name="models"  value="tata moterss">
+        <label for="gaddi">tata moters</label>
+        <input type="radio" id="hyundai" name="models"  value="hyundais">
+        <label for="car">hyundai</label>
+        <input type="radio" id="suzuki" name="models"  value="suzukis">
+        <label for="gaddi">suzuki</label>
+        <input type="radio" id="mahindra" name="models"  value="mahindras">
+        <label for="car">Mahindras</label> <br><br><br>
+         </div>
+        <input  onclick="myFun()" type="button" id="btn" value="submit">
+      
+    </form>
+
+    <script>
+        function myFun() {
+            var helloCheck = document.querySelector('input[name="models"]:checked');
+
+            if(helloCheck){
+                
+                switch(helloCheck.value){
+
+                    case "mercedes":
+                        alert("You like mercedes");
+                        break;
+                    
+                    case "tata moterss":
+                        alert("You like tata moters");
+                        break;
+                    
+                    case "hyundais":
+                        alert("You like hyundai");
+                        break;
+                        
+                    case "suzukis":
+                        alert("You like suzuki");
+                        break;
+
+                    case "mahindras":
+                        alert("You like mahindras");
+                        break;
+                }
+            }
+            else {
+                alert("You did not select any checkbox yet, please select any and then press submit btn");
+            }
+        }
+    </script>
+    
+</body>
+</html>
