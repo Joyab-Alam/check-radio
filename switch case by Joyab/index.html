@@ -28,36 +28,38 @@
     <script>
         function myFun() {
             var helloCheck = document.querySelector('input[name="models"]:checked');
-
+            var textshow;
             if(helloCheck){
                 
                 switch(helloCheck.value){
 
                     case "mercedes":
-                        alert("You like mercedes");
+                        textshow = ("You like mercedes");
                         break;
                     
                     case "tata moterss":
-                        alert("You like tata moters");
+                         textshow = ("You like tata moters");
                         break;
                     
                     case "hyundais":
-                        alert("You like hyundai");
+                         textshow = ("You like hyundai");
                         break;
                         
                     case "suzukis":
-                        alert("You like suzuki");
+                         textshow = ("You like suzuki");
                         break;
 
                     case "mahindras":
-                        alert("You like mahindras");
+                        textshow = ("You like mahindras");
                         break;
                 }
             }
             else {
-                alert("You did not select any checkbox yet, please select any and then press submit btn");
+                 textshow = ("You did not select any checkbox yet, please select any and then press submit btn");
             }
+             alert(textshow)
         }
+       
     </script>
     
 </body>
